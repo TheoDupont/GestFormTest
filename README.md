@@ -1,12 +1,12 @@
 This application is a quick test app for GestForm test.
 
-- Installation and usage:
+* Installation and usage:
 
 The application runs with .NET framework under version 7.0.101 : https://dotnet.microsoft.com/en-us/
 
 To run the program, assuming .NET is installed and accessible through a terminal, in app directory, use: dotnet run -- arglist
 
-- Examples
+* Examples
 dotnet run -- 3 5 30 65 4 will print
 
 Geste
