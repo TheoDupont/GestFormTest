@@ -4,10 +4,8 @@ namespace GestFormTest
 {
     class Program
     {
-        static void Main(string[] args){
+        public static void Main(string[] args){
             
-            Console.WriteLine("Hello, World!");
-
             for(int i=0; i<args.Length; ++i){
 
                 int number;
@@ -25,11 +23,25 @@ namespace GestFormTest
                     Console.WriteLine("Argument recieved: " + args[i]);
                     return;
                 }
-                
-                Console.WriteLine(args[i]);
+
+                switch(Calculus.computeDivision(number)){
+                    case 0:
+                        Console.WriteLine(number);
+                        break;
+                    case 1:
+                        Console.WriteLine("Geste");
+                        break;
+                    case 2:
+                        Console.WriteLine("Forme");
+                        break;
+                    case 3:
+                        Console.WriteLine("Gestform");
+                        break;
+                    default:
+                        Console.WriteLine("Unexpected behavior");
+                        break;
+                }
             }
         }
-
-
     }
 }
