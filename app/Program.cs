@@ -1,9 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-namespace GestFormTest
+﻿namespace GestFormTest
 {
     class Program
     {
+
+        //This main method have two objectives. One is to filter our list of arguments, and get out of the program if one of the 
+        //arguments is invalid (not numeric or out of bounds). The other one is to print output for each number of the list.
         public static void Main(string[] args){
             
             for(int i=0; i<args.Length; ++i){
@@ -24,6 +25,7 @@ namespace GestFormTest
                     return;
                 }
 
+                //Using computeDivision to determine output.
                 switch(Calculus.computeDivision(number)){
                     case 0:
                         Console.WriteLine(number);
